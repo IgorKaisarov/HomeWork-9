@@ -37,5 +37,21 @@ public class Main {
             }
         }
         System.out.println(minSalary);
+
+        // Task 3
+        System.out.println(" Task 3 ");
+
+        int[] accountant = new int[5];
+        accountant[0] = 75_300;
+        accountant[1] = 98_154;
+        accountant[2] = 134_776;
+        accountant[3] = 99_000;
+        accountant[4] = 195_991;
+        int middle = 0;
+        for (int number = 0; number < accountant.length; number++) {
+        middle += accountant[number];
+        }
+        middle = middle / 5;
+        System.out.println(" Средняя сумма трат за месяц составила " + middle + " рублей ");
     }
 }
