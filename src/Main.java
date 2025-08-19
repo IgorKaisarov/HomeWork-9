@@ -1,5 +1,3 @@
-import java.lang.module.FindException;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -49,7 +47,7 @@ public class Main {
         accountant[4] = 195_991;
         double middle = 0;
         for (int number = 0; number < accountant.length; number++) {
-        middle += accountant[number];
+            middle += accountant[number];
         }
         middle = middle / 5.0;
         System.out.println(" Средняя сумма трат за месяц составила " + middle + " рублей ");
@@ -57,13 +55,13 @@ public class Main {
         // Task 4
         System.out.println(" Task 4 ");
 
-        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        char[] reserveFuulName2 = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reserveFuulName2.length - 1; i >= 0; i--) {
+            System.out.print(reserveFuulName2[i]);
 
-
-
-
-
-
+        }
 
     }
 }
+
+
