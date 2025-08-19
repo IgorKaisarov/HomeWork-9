@@ -47,11 +47,23 @@ public class Main {
         accountant[2] = 134_776;
         accountant[3] = 99_000;
         accountant[4] = 195_991;
-        int middle = 0;
+        double middle = 0;
         for (int number = 0; number < accountant.length; number++) {
         middle += accountant[number];
         }
-        middle = middle / 5;
+        middle = middle / 5.0;
         System.out.println(" Средняя сумма трат за месяц составила " + middle + " рублей ");
+
+        // Task 4
+        System.out.println(" Task 4 ");
+
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+
+
+
+
+
+
+
     }
 }
