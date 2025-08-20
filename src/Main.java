@@ -49,19 +49,32 @@ public class Main {
         for (int number = 0; number < accountant.length; number++) {
             middle += accountant[number];
         }
-        middle = middle / 5.0;
+        middle = middle / accountant.length;
         System.out.println(" Средняя сумма трат за месяц составила " + middle + " рублей ");
 
         // Task 4
         System.out.println(" Task 4 ");
 
-        char[] reserveFuulName2 = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int i = reserveFuulName2.length - 1; i >= 0; i--) {
-            System.out.print(reserveFuulName2[i]);
-
+        char[] reserveFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        int length = reserveFullName.length;
+        int book = 0;
+        for (; book < length / 2; book++) {
+            char temp = reserveFullName[book];
+            reserveFullName[book] = reserveFullName[length - 1 - book];
+            reserveFullName[length - 1 - book] = temp;
         }
-
+        System.out.println(reserveFullName);
     }
+
 }
+
+
+
+
+
+
+
+
+
 
 
