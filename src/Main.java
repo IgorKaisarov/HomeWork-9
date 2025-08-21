@@ -1,15 +1,80 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        // Task 1
+        System.out.println(" Task 1 ");
+
+        int[] job = new int[5];
+        job[0] = 10_000;
+        job[1] = 5_000;
+        job[2] = 21_000;
+        job[3] = 8_000;
+        job[4] = 14_500;
+        int sum = 0;
+
+        for (int k = 0; k < job.length; k++) {
+            sum += job[k];
         }
+        System.out.println(" Сумма трат за месяц составила " + sum + " рублей. ");
+
+        // Task 2
+        System.out.println(" Task 2 ");
+
+        int[] salary = {20_000, 50_000, 15_000, 75_000, 160_000};
+        int maxSalary = -1;
+        for (int index = 0; index < salary.length; index++) {
+            if (salary[index] > maxSalary) {
+                maxSalary = salary[index];
+            }
+        }
+        System.out.println(maxSalary);
+        int minSalary = Integer.MAX_VALUE;
+        for (int key = 0; key < salary.length; key++) {
+            if (salary[key] < minSalary) {
+                minSalary = salary[key];
+            }
+        }
+        System.out.println(minSalary);
+
+        // Task 3
+        System.out.println(" Task 3 ");
+
+        int[] accountant = new int[5];
+        accountant[0] = 75_300;
+        accountant[1] = 98_154;
+        accountant[2] = 134_776;
+        accountant[3] = 99_000;
+        accountant[4] = 195_991;
+        double middle = 0;
+        for (int number = 0; number < accountant.length; number++) {
+            middle += accountant[number];
+        }
+        middle = middle / accountant.length;
+        System.out.println(" Средняя сумма трат за месяц составила " + middle + " рублей ");
+
+        // Task 4
+        System.out.println(" Task 4 ");
+
+        char[] reserveFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        int length = reserveFullName.length;
+        int book = 0;
+        for (; book < length / 2; book++) {
+            char temp = reserveFullName[book];
+            reserveFullName[book] = reserveFullName[length - 1 - book];
+            reserveFullName[length - 1 - book] = temp;
+        }
+        System.out.println(reserveFullName);
     }
+
 }
+
+
+
+
+
+
+
+
+
+
+
